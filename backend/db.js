@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // const URI= 'mongodb+srv://MERN:dehradun@mern.is1k7ab.mongodb.net/Memories?retryWrites=true&w=majority';
-const URI= 'mongodb+srv://MERN:dehradun@mern.is1k7ab.mongodb.net/?retryWrites=true&w=majority&appName=MERN';
+const URI= 'mongodb+srv://MERN:mernapp@mern.is1k7ab.mongodb.net/?retryWrites=true&w=majority&appName=MERN';
 // const mongoDB= async()=>{
 //     await mongoose.connect(URI,{useNewUrlParser: true}, async(err,result)=>{
 //         if(err)     console.log("---",err);
