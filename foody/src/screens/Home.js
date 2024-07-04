@@ -2,7 +2,9 @@ import React,{useEffect,useState} from 'react';
 import Navbar from '../components/Navbar';
 import Card from '../components/Card';
 import Footer from '../components/Footer';
-
+import burger from './bur.jpeg';
+import pizza from './pizza.jpeg';
+import cd from './cd.png';
 export default function Home() {
   const [search, setSearch] = useState('')
 
@@ -35,19 +37,19 @@ export default function Home() {
     <div className="carousel-inner" id='carousel'>
 
     <div className="carousel-caption" style={{zIndex: "10"}}>
-        <div class="d-flex justify-content-center">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" value={search} onChange={(e) => { setSearch(e.target.value) }}/>
-        <button class="btn btn-outline-success bg-success text-white" type="submit">Search</button>
+        <div className="d-flex justify-content-center">
+        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" value={search} onChange={(e) => { setSearch(e.target.value) }}/>
+        <button className="btn btn-outline-success bg-success text-white" type="submit">Search</button>
         </div>
     </div>
       <div className="carousel-item active">
-        <img src="https://source.unsplash.com/random/900x700/?burger" className="d-block w-100" alt="..."/>
+        <img src={burger} className="d-block w-100" alt="..."/>
       </div>
       <div className="carousel-item">
-        <img src="https://source.unsplash.com/random/900x700/?pizza" className="d-block w-100" alt="..."/>
+        <img src={pizza} className="d-block w-100" alt="..."/>
       </div>
       <div className="carousel-item">
-        <img src="https://source.unsplash.com/random/900x700/?colddrink" className="d-block w-100" alt="..."/>
+        <img src={cd} className="d-block w-100" alt="..."/>
       </div>
     </div>
     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
